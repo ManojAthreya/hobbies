@@ -1,0 +1,16 @@
+{
+  "name": "hobbies",
+  "version": "1.0.0",
+  "description": "App to post your hobbies",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Manoj Athreya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.2.9"
+  }
+}
