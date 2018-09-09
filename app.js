@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const mongoose = require('mongoose');
 const exphbs = require('express-handlebars');
 const cookieParser = require('cookie-parser');
@@ -53,6 +54,9 @@ app.use((req,res,next) => {
    res.locals.user = req.user || null;
    next();
 });
+
+//Set static folder
+app.use(express.static(path.join(__dirname,'public')));
 
 //Use routes
 app.use('/',index);

@@ -6,7 +6,16 @@ router.get('/',(req,res) => {
  });
 
  router.get('/dashboard',(req,res) => {
-    res.send('Dashboard');
+    res.render('index/dashboard');
  });
+
+ router.get('/hobbies',(req,res) => {
+    res.render('hobbies/index');
+ });
+ 
+ router.get('/hobbies/add',(req,res) => {
+    res.render('hobbies/index');
+ });
+
 
  module.exports = router;
